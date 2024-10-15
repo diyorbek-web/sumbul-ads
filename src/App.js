@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet"; // Helmetni import qilish
 import SentNumber from "./components/SentNumber";
-import Description from "./components/Description";
 import "./index.css";
-import shifo from "./assets/shifo.JPG";
+import qon from "./assets/qonbosimi.jpg";
+import sumbul from "./assets/sumbul.jpg";
 
 function App() {
   const [timeLeft, setTimeLeft] = useState("");
@@ -31,9 +31,11 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 py-8 px-4 flex flex-col items-center">
+    <div className="min-h-screen bg-gray-100 py-4 px-4 flex flex-col items-center">
       <Helmet>
-        <title>Yurak og'rig'i sababi nima?</title>
+        <html lang="uz" />
+        <title>Insult, Infarkt</title>
+        <meta charSet="utf-8" />
         <meta
           name="description"
           content="Yurak og'rig'i (angina) sabablari va ORGANIC Sumbul Shifo kompleksi haqida ma'lumot."
@@ -41,60 +43,142 @@ function App() {
         <meta name="keywords" content="yurak, og'riq, shifo, ORGANIC" />
         <meta name="author" content="Sizning Ismingiz" />
       </Helmet>
+
       <div className="max-w-3xl bg-white p-6 rounded-lg shadow-lg">
-        <h1 className="text-[40px] font-bold text-[#4DAA8A] text-center">
-          Yurak og'rig'i sababi nima?
+        <h1 className="text-[30px] font-bold  text-center">
+          Hayotning So'nggi Chegarasidan Qaytish
         </h1>
-        <p className="text-center text-[20px] text-black mt-4">
-          Yurak og'rig'i (angina) ko'pincha yurak tomirlaridagi muammolar
-          tufayli yuzaga keladi. Ushbu og'riq ko'pincha yurak mushagining
-          kislorod yetishmasligi natijasida sodir bo'ladi. Yurak og'rig'ining
-          asosiy sabablariga quyidagilar kiradi:
-          <p className="mt-5 text-[18px]">
-            <span className="font-medium">
-              1. Koronariya arteriyalarining torayishi:
-            </span>
-            Yurakni oziqlantiruvchi arteriyalarning torayishi (ateroskleroz)
-            ko'pincha yurak og'rig'iga sabab bo'ladi. Ushbu holat yurak
-            mushagining zarur kislorodni olmasligiga olib keladi.
-          </p>
-          <p className="mt-5 text-[18px]">
-            <span className="font-medium">2. Yurak mushagi kasalliklari:</span>
-            Yurak mushagining yallig'lanishi, zararlanishi yoki boshqa
-            kasalliklar ham yurak og'rig'ini keltirib chiqarishi mumkin.
-          </p>
-          <p className="mt-5 text-[18px]">
-            <span className="font-medium">3. Yurak ritmi buzilishlari:</span>
-            Yurak urishi yoki ritmi buzilganda, bu yurak og'rig'ini keltirib
-            chiqarishi mumkin.
-          </p>
-          <p className="mt-5 text-[18px]">
-            <span className="font-medium">4. Yurak qopqog'i kasalliklari:</span>
-            Yurak qopqog'ining yallig'lanishi yoki zararlanishi ham yurak
-            og'rig'iga olib kelishi mumkin.
-          </p>
-          <p className="mt-5 text-[18px]">
-            <span className="font-medium">5. Stress va depressiya:</span>
-            Stress, xavotir va depressiya yurakning faoliyatini va qon
-            aylanishini ta'sir qiladi, bu ham yurak og'rig'iga olib kelishi
-            mumkin.
-          </p>
-          <p className="mt-5 text-[18px]">
-            <span className="font-medium">6. Jismoniy faoliyat:</span>
-            Kuchli jismoniy faoliyat yoki kuchli stress holatlari yurak
-            og'rig'ini keltirib chiqarishi mumkin.
-          </p>
+        <p className="text-center mt-5 font-normal">
+          Ahmad aka uzoq yillar davomida o‘zini charchoq va og‘riqlardan azob
+          chekib kelayotganini hech kimga aytmas edi. Har tong u uchun yangi bir
+          kurash edi. Bir kuni, Ahmad aka o‘zini ertalab qo‘zg‘atishga kuch topa
+          olmay qoldi. Oilasi unga qarab, uning har kuni tobora charchab
+          borayotganini sezsada, u buni tan olmasdi.
         </p>
-        <p className="text-[30px] text-center font-bold text-[#4DAA8A]">
-          Biz sizga ORGANIC Sumbul Shifo kompleksni taklif etamiz!
+        <p className="font-normal  text-center mt-5">
+          Og‘ir nafas olgancha uyqudan uyg‘onish, yurakni ezib kelayotgan
+          og‘riqlar, tinmay charchayotgan vujudi uni asta-sekin kuchsizlantirib
+          borardi. Shifokorlarga borib, ko‘plab dorilar qabul qilishiga qaramay,
+          u o‘zini tetik his qilmasdi. Har bir dori ichganida, u o‘zini biroz
+          yaxshi his qilardi, ammo bu vaqtinchalik edi.
         </p>
+        <p className="font-normal text-center mt-5">
+          Bir kuni u og‘ir holatga tushdi. Qon bosimi keskin ko‘tarildi va qonga
+          zararli moddalarning yig‘ilib qolishi sababli yuragi to‘xtab qolish
+          xavfi paydo bo‘ldi. Shu paytda uning oilasi o‘ziga boshqa yordam
+          topishga kirishdi. Qizi unga bir necha oylardan beri eshitib kelgan
+          Sumbul Shifo haqida gapirib berdi. Avvaliga u bunga ishonmadi, "oddiy
+          o‘t-o‘lan qanday qilib meni sog‘lom qila oladi?" deb o‘ylardi. Ammo
+          boshqa hech qanday imkon qolmagach, u bunga sinab ko‘rishga qaror
+          qildi.
+        </p>
+
         <div className="mt-8 flex justify-center">
           <img
-            src={shifo}
+            src={qon}
             alt="Sumbul Shifosi"
             className="rounded-lg shadow-md"
           />
         </div>
+        <p className="font-normal text-center mt-5">
+          Bir necha hafta o‘tgach, Ahmad aka o‘zini yana boshqacha his eta
+          boshladi. Yuragidagi og‘riqlar kamaydi, tanasidagi og‘riqlar
+          sekin-asta yo‘qoldi, va u ko‘p yillik charchoqlardan qutuldi. Endi u
+          o‘z oilasi bilan ertalabdan tetik holda uyg‘onib, shijoat bilan yangi
+          kunni boshlashga tayyor edi. O‘sha paytdagi xastaligi va og‘riqlari
+          xuddi yomon tush kabi ortda qoldi.
+        </p>
+        <p className="text-center font-normal mt-5">
+          Ahmad aka Sumbul Shifo tufayli o‘z hayotini qayta tikladi va o‘z
+          do‘stlariga ham shu mahsulotni tavsiya qila boshladi.
+        </p>
+        <p className="font-bold text-center text-[30px] mt-5">
+          Dunyo bo'yicha qo'rqinchli statistikalar
+        </p>
+        <ul className="mt-5">
+          <li className="text-center">
+            <span className="font-bold">Yurak kasalliklari:</span> Har yili 17.9
+            million odam yurak kasalliklaridan vafot etadi, bu barcha
+            o‘limlarning 31% ni tashkil etadi.
+          </li>
+          <li className="text-center">
+            <span className="font-bold">Diabed:</span> Dunyo bo‘yicha 463
+            million odam diabetdan azob chekadi va bu raqam 2045 yilga kelib 700
+            millionga yetishi mumkin.
+          </li>
+          <li className="text-center">
+            <span className="font-bold">Onkologiya:</span>Har yili 10 milliondan
+            ortiq odam onkologik kasalliklardan vafot etadi. Bu raqam har yili
+            oshib bormoqda.
+          </li>
+          <li className="text-center">
+            <span className="font-bold">Depressiya:</span> Har yili 280 million
+            odam depressiya bilan kurashadi, va bu ruhiy salomatlik bo‘yicha eng
+            keng tarqalgan muammolardan biridir.
+          </li>
+        </ul>
+        <p className="text-[24px] p-10 text-center text-[#4DAA8A] font-bold">
+          Malakali shifokorlarimizdan mutlaqo <br />
+          <span className="text-red-700">BEPUL</span> konsultatsiya oling
+        </p>
+        <SentNumber />
+        <p className="text-center text-[30px] font-bold mt-5">
+          Sumbul Shifo Haqida Ma'lumot
+        </p>
+
+        <p className="text-center font-normal">
+          Sumbul Shifo - bu kuchli terapevtik xususiyatlarga ega bo‘lgan tabiiy
+          o‘simlikdir. U bir qancha salomatlik foydalari bilan mashhur:
+        </p>
+        <div className="mt-8 flex justify-center">
+          <img
+            src={sumbul}
+            alt="Sumbul Shifosi"
+            className="rounded-lg shadow-md"
+          />
+        </div>
+
+        <ul>
+          <li className="text-center mt-3">
+            <span className="font-bold">Quvvatni oshiradi: </span>Tanani
+            energiya bilan to‘ldiradi va charchoqni kamaytiradi.
+          </li>
+          <li className="text-center mt-3">
+            <span className="font-bold">Antioxidant:</span>Erkin radikallarga
+            qarshi kurashadi va yoshlanish jarayonini sekinlashtiradi.
+          </li>
+          <li className="text-center mt-3">
+            <span className="font-bold">Sedativ:</span>Tinchlantiruvchi va
+            stressni kamaytiruvchi ta’sirga ega.
+          </li>
+          <li className="text-center mt-3">
+            <span className="font-bold">Yallig‘lanishga qarshi:</span>
+            Yallig‘lanishlarni kamaytiradi va tahlil qilish jarayonlarini
+            yaxshilaydi.
+          </li>
+          <li className="text-center mt-3">
+            <span className="font-bold">Spazmolitik:</span>Og‘riqlarni
+            kamaytiradi va mushaklarni yumshatadi.
+          </li>
+          <li className="text-center mt-3">
+            <span className="font-bold">Bakteriyalarga qarshi: </span>
+            Bakteriyalarga qarshi kurashadi va infeksiyalarni oldini oladi.
+          </li>
+          <li className="text-center mt-3">
+            <span className="font-bold">Immun tizimni mustahkamlaydi:</span>
+            Immun tizimni kuchaytiradi va kasalliklardan himoya qiladi.
+          </li>
+          <li className="text-center mt-3">
+            <span className="font-bold">
+              Hujayra tiklanishini tezlashtiradi:
+            </span>
+            Yara va hujayralarning tiklanishini yaxshilaydi.
+          </li>
+          <li className="text-center mt-3">
+            <span className="font-bold">Metabolizmni me’yorga soladi:</span>
+            Metabolizmni optimallashtiradi va ortiqcha yog'larni kamaytiradi.
+          </li>
+        </ul>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           <div className="text-center">
@@ -120,19 +204,14 @@ function App() {
         <div className="bg-red-100 text-red-600 p-4 rounded-lg text-center mt-6">
           ⏳ Chegirmani qo‘lga kiriting! Taklif tugashiga {timeLeft} qoldi.
         </div>
-        <p className="text-[24px] p-10 text-center text-[#4DAA8A] font-bold">
-          Malakali shifokorlarimizdan mutlaqo <br />
-          <span className="text-red-700">BEPUL</span> konsultatsiya oling
+        <p className="text-[24px] p-10 text-[#4DAA8A] text-center font-bold">
+          Sizga mahsulotimiz sizga qiziq bo'lsa raqamingizni qoldiring <br />
         </p>
         <SentNumber />
-        <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
-          <a href="tel:+998781136201">
-            <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-all">
-              📞 Bizga Qo‘ng‘iroq Qiling
-            </button>
-          </a>
-        </div>
-        <Description />
+        <p className="text-[24px] mt-5 text-center font-bold">
+          O'zbekiston bo'ylab <span className="text-red-700">1 kun</span> ichida
+          mutlaqo <span className="text-red-700">BEPUL</span> yetkazib beramiz
+        </p>
       </div>
     </div>
   );
