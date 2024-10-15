@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet"; // Helmetni import qilish
 import SentNumber from "./components/SentNumber";
+import Description from "./components/Description";
 import "./index.css";
 import shifo from "./assets/shifo.JPG";
 
@@ -131,6 +132,7 @@ function App() {
             </button>
           </a>
         </div>
+        <Description />
       </div>
     </div>
   );
