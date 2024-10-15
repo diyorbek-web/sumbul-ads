@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet"; // Helmetni import qilish
 import SentNumber from "./components/SentNumber";
 import "./index.css";
 import shifo from "./assets/shifo.JPG";
@@ -30,6 +31,15 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 py-8 px-4 flex flex-col items-center">
+      <Helmet>
+        <title>Yurak og'rig'i sababi nima?</title>
+        <meta
+          name="description"
+          content="Yurak og'rig'i (angina) sabablari va ORGANIC Sumbul Shifo kompleksi haqida ma'lumot."
+        />
+        <meta name="keywords" content="yurak, og'riq, shifo, ORGANIC" />
+        <meta name="author" content="Sizning Ismingiz" />
+      </Helmet>
       <div className="max-w-3xl bg-white p-6 rounded-lg shadow-lg">
         <h1 className="text-[40px] font-bold text-[#4DAA8A] text-center">
           Yurak og'rig'i sababi nima?
